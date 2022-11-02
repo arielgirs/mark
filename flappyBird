@@ -2,7 +2,7 @@ from sense_hat import SenseHat
 from random import randint
 from time import sleep
 
-#create sensehat object
+#creating sensehat object
 sense = SenseHat()
 
 #colours, represented with numbers
@@ -98,6 +98,7 @@ while True:
                     gameDelay = 0.2
             sleep(gameDelay)
     
+    #display score
     while score:
         sense.show_message("Score: {}".format(score-2), text_colour=YELLOW)
         # Press joystick middle button to play again
